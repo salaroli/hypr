@@ -1,0 +1,11 @@
+# Copy this file to monitors.local.conf and adjust for your setup.
+# See https://wiki.hypr.land/Configuring/Monitors/
+#
+# Format: monitor=<name>,<resolution>@<hz>,<position>,<scale>
+#
+# Examples:
+# monitor=HDMI-A-1,1920x1080@60,0x0,1
+# monitor=DP-1,2560x1440@144,0x0,1
+# monitor=,preferred,auto,1        # auto-detect all monitors
+
+monitor=HDMI-A-3,1920x1080@144,0x0,1
