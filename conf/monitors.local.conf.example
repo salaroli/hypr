@@ -3,9 +3,20 @@
 #
 # Format: monitor=<name>,<resolution>@<hz>,<position>,<scale>
 #
+# Scale guide:
+#   1080p → scale=1
+#   1440p → scale=1  (ou 1.25 se quiser UI maior)
+#   4K    → scale=1.5  (resolução lógica ~2560x1440, bom equilíbrio)
+#           scale=2    (resolução lógica 1920x1080, UI maior)
+#
+# Nota: com MOZ_ENABLE_WAYLAND=1 (já em env.conf), o Firefox lê o scale
+# de cada monitor automaticamente via Wayland. Não é necessário mexer em
+# layout.css.devPixelsPerPx no Firefox para ajustar escala por monitor.
+#
 # Examples:
 # monitor=HDMI-A-1,1920x1080@60,0x0,1
 # monitor=DP-1,2560x1440@144,0x0,1
-# monitor=,preferred,auto,1        # auto-detect all monitors
+# monitor=DP-2,3840x2160@60,1920x0,1.5   # 4K ao lado de um 1080p
+# monitor=,preferred,auto,1              # auto-detect all monitors
 
 monitor=HDMI-A-3,1920x1080@144,0x0,1
