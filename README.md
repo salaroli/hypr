@@ -49,7 +49,7 @@ pacman -S waybar
 pacman -S alacritty
 
 # File manager
-pacman -S dolphin
+pacman -S thunar
 
 # App launcher
 pacman -S rofi-wayland
@@ -86,7 +86,7 @@ dnf install waybar
 dnf install alacritty
 
 # File manager
-dnf install dolphin
+dnf install thunar
 
 # App launcher
 dnf install rofi-wayland
@@ -120,7 +120,7 @@ add-apt-repository ppa:hyprland/staging
 apt update && apt install hyprland
 
 # Other dependencies
-apt install waybar alacritty dolphin rofi wireplumber brightnessctl playerctl
+apt install waybar alacritty thunar rofi wireplumber brightnessctl playerctl
 
 # grimblast and swww — build from source or use a third-party package
 # See: https://github.com/hyprwm/hyprland-contrib
@@ -133,7 +133,7 @@ apt install waybar alacritty dolphin rofi wireplumber brightnessctl playerctl
 |---|---|
 | `Super + T` | Terminal (alacritty) |
 | `Super + Space` | App launcher (rofi) |
-| `Super + E` | File manager (dolphin) |
+| `Super + E` | File manager (thunar) |
 | `Super + Q` | Close active window |
 | `Super + V` | Toggle floating |
 | `Super + P` | Toggle pseudotile |
