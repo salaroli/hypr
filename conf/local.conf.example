@@ -1,0 +1,15 @@
+# Ajustes desta máquina — copie para conf/local.conf (gitignored).
+# É o último arquivo carregado: o que estiver aqui vence o resto da config.
+# O Hyprland reclama se conf/local.conf não existir (pode ficar vazio).
+
+# Teclado Windows usado como Mac (Alt físico = Super):
+# input {
+#     kb_options = altwin:swap_lalt_lwin
+# }
+
+# Monitor 4K com escala 1.5:
+# env = STEAM_FORCE_DESKTOPUI_SCALING,1.5
+# env = HYPRCURSOR_SIZE,48
+
+# Wallpaper:
+# exec-once = sleep 1 && awww img ~/Pictures/wallpapers/<arquivo>.jpg

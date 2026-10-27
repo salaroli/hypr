@@ -11,6 +11,8 @@ hypr/
     ├── monitors.conf          # sources monitors.local.conf (gitignored)
     ├── monitors.local.conf    # ← you create this per machine (see example)
     ├── monitors.local.conf.example
+    ├── local.conf             # ← per machine too: keyboard, scaling, wallpaper (gitignored)
+    ├── local.conf.example
     ├── env.conf
     ├── autostart.conf
     ├── look-and-feel.conf
@@ -26,6 +28,8 @@ git clone https://github.com/salaroli/hypr ~/.config/hypr
 cp ~/.config/hypr/conf/monitors.local.conf.example \
    ~/.config/hypr/conf/monitors.local.conf
 # edit monitors.local.conf for your display(s)
+cp ~/.config/hypr/conf/local.conf.example ~/.config/hypr/conf/local.conf
+# uncomment what this machine needs (it may stay empty, but must exist)
 ```
 
 ## Multi-machine monitor config
