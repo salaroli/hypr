@@ -11,7 +11,7 @@ hypr/
     ├── monitors.conf          # sources monitors.local.conf (gitignored)
     ├── monitors.local.conf    # ← you create this per machine (see example)
     ├── monitors.local.conf.example
-    ├── local.conf             # ← per machine too: keyboard, scaling, wallpaper (gitignored)
+    ├── local.conf             # ← per machine too: keyboard, scaling — hardware only (gitignored)
     ├── local.conf.example
     ├── env.conf
     ├── autostart.conf
@@ -31,6 +31,12 @@ cp ~/.config/hypr/conf/monitors.local.conf.example \
 cp ~/.config/hypr/conf/local.conf.example ~/.config/hypr/conf/local.conf
 # uncomment what this machine needs (it may stay empty, but must exist)
 ```
+
+## Shared vs per machine
+
+Only hardware goes in the `*.local.conf` files (monitors, keyboard, 4K scaling). Theme,
+wallpaper and programs are the same on every machine: they live here or in the private
+`dotfiles` repo on Forgejo (rofi, kitty, fish, GTK, wallpaper), whose README has the full table.
 
 ## Multi-machine monitor config
 
